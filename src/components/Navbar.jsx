@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-[#F8F6F2]/95 backdrop-blur-sm border-b border-gray-200">
-      
+
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* Logo */}
@@ -15,8 +14,8 @@ const Navbar = () => {
         </h1>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-8 text-sm font-medium">
-          
+        <ul className="hidden lg:flex gap-8 text-sm font-medium">
+
           <li>
             <a
               href="#about"
@@ -58,17 +57,17 @@ const Navbar = () => {
         {/* Mobile Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-3xl text-[#1E3A5F]"
+          className="lg:hidden text-3xl text-[#1E3A5F]"
         >
-         {menuOpen ? <HiOutlineX /> : <HiOutlineMenu />}
+          {menuOpen ? "✕" : "☰"}
         </button>
 
       </nav>
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden border-t border-gray-200 bg-[#F8F6F2]">
-          
+        <div className="lg:hidden border-t border-gray-200 bg-[#F8F6F2]">
+
           <ul className="flex flex-col px-6 py-4 gap-5 text-sm font-medium">
 
             <li>
