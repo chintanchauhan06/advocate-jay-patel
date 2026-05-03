@@ -2,16 +2,44 @@
 
 @import "tailwindcss";
 
+
 html {
   scroll-behavior: smooth;
 }
+
 
 body {
   font-family: 'Inter', sans-serif;
   background-color: #F8F6F2;
   color: #111827;
+  overflow-x: hidden;
 }
+
 
 .heading-font {
   font-family: 'Playfair Display', serif;
+}
+
+
+::selection {
+  background-color: #1E3A5F;
+  color: white;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+a,
+button {
+  transition: all 0.3s ease;
+}
+
+button:focus,
+a:focus {
+  outline: 2px solid #1E3A5F;
+  outline-offset: 2px;
 }
