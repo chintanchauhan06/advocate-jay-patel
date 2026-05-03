@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { HiMenu, HiX } from "react-icons/hi";
+import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -60,7 +60,7 @@ const Navbar = () => {
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden text-3xl text-[#1E3A5F]"
         >
-          {menuOpen ? <HiX /> : <HiMenu />}
+         {menuOpen ? <HiOutlineX /> : <HiOutlineMenu />}
         </button>
 
       </nav>
