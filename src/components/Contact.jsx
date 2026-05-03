@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-24 border-b border-gray-200 bg-[#F8F6F2]"
+      className="py-16 md:py-24 border-b border-gray-200 bg-[#F8F6F2]"
     >
       <div className="max-w-6xl mx-auto px-6">
 

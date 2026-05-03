@@ -2,7 +2,7 @@ const Declaration = () => {
   return (
     <section
       id="declaration"
-      className="py-20 bg-[#EFEAE2]"
+      className="py-16 md:py-20 bg-[#EFEAE2]"
     >
       <div className="max-w-5xl mx-auto px-6 text-center">
 
